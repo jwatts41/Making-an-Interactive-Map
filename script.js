@@ -41,3 +41,10 @@ window.onload = async () => {
     myMap.coordinates = coords
     myMap.buildMap()
 }
+
+// business submit button
+document.getElementById('submit').addEventListener('click', async (event) => {
+	event.preventDefault()
+	let business = document.getElementById('business').value
+	console.log(business)
+})
